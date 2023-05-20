@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagares Imprimibles Nuevo Ceibo</title>
+    <link rel="stylesheet" type="text/css" href="./assets/estilos.css" />
+</head>
+<body>
+
+    <section class="titulo">
+        <div class="tit-texto">
+            <img src="./assets/logo.jpg" alt="logo" width="100px">
+            <h1> Pagare Imprimibles</h1>
+        </div>
+        <div class="tit-linea"> </div>
+    </section>
+    
+    <section class="configuracion">
+        <h2>Desde / Hasta</h2>
+        <label for="pn-desde">Desde el Nº</label>
+        <input type="number" id="pn-desde" class="input-corto" value="1">
+        <label for="pn-hasta">Hasta el Nº</label>
+        <input type="number" id="pn-hasta" class="input-corto">
+        <button id="boton">Re-Calcular</button>
+        <hr>
+    </section>
+
+    <section class="modelo">
+        <h2>Modelo de Pagare</h2>
+        <div class="modelo-caja">
+            <div class="modelo-caja-interna">
+                <div class="renglon-0">
+                    <div class="renglon-1">
+                        <p>Pagare Nº <span>1</span> de <input type="number" value="10" id="pn-tot" class="input-corto"></p>
+                        <p>Vence el <input type="date" id="pf-venc" value="2018-07-22"></p>
+                    </div>
+                    <p class="renglon-1-2"><strong>POR: </strong><input type="number" id="pm-monto" value="50000.00"></p>
+                </div>
+    
+                <div class="renglon-m">
+                    <p>CORDOBA <input type="date" id="pf-fecha"> <strong>PAGARÉ SIN PROTESTO</strong> (art. 50 D. Ley 5965/63) al señor <input type="text" id="p-destino" placeholder="DESTINATARIO"> a su orden la cantidad de pesos argentino <span>cuarenta mil</span></p>
+                    <p>Por Igual valor recibido en <input type="text" id="txt-igual-valor" placeholder="se esta vacio no se muestra"  class="anchotxt"></p>
+                    <p>pagadero en <input type="text" id="txt-pagadero-en" placeholder="se esta vacio no se muestra" class="anchotxt"></p>
+                </div>
+    
+                <div class="renglon-f">
+                    <p>Firmante: <input type="text" id="f-firmante" value="APELLIDO Y NOMBRE"></p>
+                    <p>DNI: <input type="text" id="f-dni" value="12345678"></p>
+                    <p>Dirección: <input type="text" id="f-direccion" value="Calle Ejemplo 1234"></p>
+                    <p>Telefono: <input type="text" id="f-telefono" value="0351-1234567"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modelo">
+        <h2>Modelo Pagare a Imprimir</h2>
+    </section>
+
+    <section class="pagares" id="contenedor">
+
+    </section>
+
+    <script src="./assets/js.js"></script>
+</body>
+</html>
